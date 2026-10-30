@@ -2,17 +2,23 @@
 <html>  
     <head> 
         <link rel="icon" href="/bin/download.webp"> 
+
         <title>
             hello world!
         </title>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <header style="background-color: blanchedalmond;">
+    <body >
+        <header >
             <h1>Hi Guys, Revising HTML basic </h1>
-            <a href="">home</a>
-            <a href="">about us</a>
-            <a href="">products</a>
-            <a href="">contact us</a>
+            <nav>
+            <a href="">Home</a>
+            <a href="">Products</a>
+            <a href="">Career</a>
+            <a href="">About Us</a>
+            <a href="">Contact Us</a>
+            </nav>
+            
             <hr>
         </header>
         <main>
@@ -30,10 +36,10 @@
         alt="this is GeekforGeeks">GG</img>
 <br>
 
-        <audio controls autoplay muted>
+        <audio controls autoplay muted style="border: 1px;border-color: azure;">
             <source src="/bin/videoplayback.mp4">
 
-        </audio>
+        </audio><br>
         <video controls autoplay muted
         width="500px">
         <source src="/bin/Wo Humsafar tha (Slowed + Reverb).mp4"> 
@@ -72,8 +78,8 @@
         <p>
             this is <small>small</small> text.
         </p>
-        <h2><span style="background-color:tomato;">UNORDERED LIST</span></h2> 
-        <div style="background-color: blueviolet;"><ul>
+        <h2><span >UNORDERED LIST</span></h2> 
+        <div ><ul>
             <li>
                 huzaif
                 <ul>
@@ -127,11 +133,10 @@
                 A dragon is a large, serpentine or reptilian mythical creature found in the folklore and traditions of cultures all over the world. 
             </dd>
         </dl>
-        <hr style= "background-color: aqua;height: 10px;">
+        <hr>
         <h2 >table</h2>
-        <table style="background-color: black;" border="1px">
-            <tr style="background-color: aquamarine;"  align="center">
-            <th>
+        <table>
+            <tr>
                 pagal
             </th>
             
@@ -142,24 +147,24 @@
                 thk
             </th>
         </tr>
-            <tr style="background-color: aliceblue;">
+            <tr>
                 <td>atufa</td>
                 <td>arsi</td>
                 <td>farhan</td>
             </tr>
-            <tr style="background-color: aliceblue;">
+            <tr>
                 <td>laiba</td>
                 <td>rasik</td>
                 <td>moazamm</td>
             </tr>
-            <tr style="background-color: aliceblue;">
+            <tr>
                 <td>taqwa</td>
                 <td>aisha</td>
                 <td>huzi</td>
             </tr>
         </table>
         <a href="https://www.google.com">
-            <BUtton style="font: size 30px;background-color: blueviolet;color:white;border-radius: 10px;">CLICK ME</BUtton>
+            <BUtton>CLICK ME</BUtton>
         </a>
         <hr>
         <hr>
@@ -220,19 +225,11 @@
             </textarea>
             <br><br>
             <label for="file">file</label>
-            <input type="file" id="file" accept="image/png, images/jpeg" 
-            style="background-color: black; color: white;
-            border-radius: 10px;">
+            <input type="file" id="file" 
+            accept="image/png, images/jpeg" >
             <br><br>
-            <input type="reset" 
-            style="background-color: blueviolet; 
-            color: white;
-            border-radius: 10px;
-            ">
-            <input type="submit"
-            style="background-color: palevioletred;
-            color: white;
-            border-radius: 10px;">
+            <input type="reset">
+            <input type="submit">
 
         </form>
         </main>
