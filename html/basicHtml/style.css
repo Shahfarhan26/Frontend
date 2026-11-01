@@ -13,18 +13,36 @@ header{
 }
 nav{
     display: flex;
-    gap: 1px;
+    gap: 30px;
 }
 header h1{
     font-size: 42px;
+    text-align: center;
     text-shadow: 3px 3px 5px black;
     padding: 15px;
     text-decoration: underline;
 }
 nav a{
-    
-    margin: auto;
     text-decoration: underline;
     font-size: 24px;
     color: hsl(65, 77%, 62%);
+}
+.img{
+    float: right;
+}
+audio{
+    float: right;
+}
+.page{
+    text-align: center;
+    padding-top: 10px;
+}
+.page a{
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+#left-arrow{
+    color: rgb(0, 0, 0);
 }
