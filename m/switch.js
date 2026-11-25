@@ -13,7 +13,6 @@ switch (value) {
             console.log(y - x)
             break;
         }
-        
     case '*':
         console.log(x * y)
         break;    
