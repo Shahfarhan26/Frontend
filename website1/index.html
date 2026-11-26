@@ -1,11 +1,120 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <h1 id="h1">Welcome to Even odd Mania</h1>
+    <h3 id="h3">Decider</h3>
+    <form id="Number Form">
+        <label id="l1">Enter 5 numbers:</label>
+        <div class="text">
+            <input type="number" id="n1">
+            <input type="number" id="n2">
+            <input type="number" id="n3">
+            <input type="number" id="n4">
+            <input type="number" id="n5">
+        </div>
+        <div class="sol">
+            <div>
+                <label id="l2">Even</label>
+                <p id="even">
+
+                </p>
+            </div>
+            <div>
+                <label id="l3">Odd</label>
+                <p id="odd">
+                    
+                </p>
+            </div>
+        </div>
+        <button id="b1" type="submit">Decide</button>
+    </form>
+<script src="AskEvenOdd.js"></script>
 </body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Even Odd Mania — Decider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="bg-glow bg-glow--top" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--bottom" aria-hidden="true"></div>
+    <main class="page">
+        <section class="card" aria-labelledby="app-title">
+            <header class="card__header">
+                <span class="badge">Number Decider</span>
+                <h1 id="app-title" class="title">Welcome to <span class="title__accent">Even Odd Mania</span>
+                </h1>
+                <p class="subtitle">
+                    Enter 5 numbers below to sort them into even and odd groups.
+                </p>
+            </header>
+            <form id="decider-form" class="form" novalidate>
+                <div class="input-section">
+                    <div class="input-section__header">
+                        <label for="num-1" class="input-label">Enter 5 numbers</label>
+                        <button type="button" id="clear-btn" class="text-btn">Clear</button>
+                    </div>
+                    <div class="inputs-grid" role="group" aria-label="Five number inputs">
+                        <input id="num-1" class="num-input" type="number" inputmode="numeric" placeholder="0"
+                            aria-label="Number 1" />
+                        <input id="num-2" class="num-input" type="number" inputmode="numeric" placeholder="0"
+                            aria-label="Number 2" />
+                        <input id="num-3" class="num-input" type="number" inputmode="numeric" placeholder="0"
+                            aria-label="Number 3" />
+                        <input id="num-4" class="num-input" type="number" inputmode="numeric" placeholder="0"
+                            aria-label="Number 4" />
+                        <input id="num-5" class="num-input" type="number" inputmode="numeric" placeholder="0"
+                            aria-label="Number 5" />
+                    </div>
+                    <p id="status-msg" class="status-msg" role="status" aria-live="polite"></p>
+                </div>
+                <div class="results-grid">
+                    <div class="result-box result-box--even">
+                        <div class="result-box__header">
+                            <span class="result-box__title">Even</span>
+                            <span id="even-count" class="count-pill">0</span>
+                        </div>
+                        <div id="even-list" class="chips-container">
+                            <span class="empty-hint">No even numbers yet</span>
+                        </div>
+                    </div>
+                    <div class="result-box result-box--odd">
+                        <div class="result-box__header">
+                            <span class="result-box__title">Odd</span>
+                            <span id="odd-count" class="count-pill">0</span>
+                        </div>
+                        <div id="odd-list" class="chips-container">
+                            <span class="empty-hint">No odd numbers yet</span>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="decide-btn">
+                    <span>Decide</span>
+                </button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
 </html>

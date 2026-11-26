@@ -17,7 +17,13 @@ let z = 1,sum = 0;
 
 while(z<11){
     sum = sum + z
-    ++z
-    
+    ++z   
 }
 console.log(sum)
+
+
+//   WAP to five no from user and print how many odd and how many even no entered by user
+//   WAP to count how many digits in a given 
+//   WAP to pring sum of digits of a given no
+//   WAP to check given no is palindrome or not palindrome
+//   WAP to find out factorial of 5
